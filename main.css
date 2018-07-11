@@ -1,0 +1,91 @@
+body {
+  font-family: "Indie Flower", cursive;
+  background-image: url("./images/abstract720.jpg");
+}
+
+.navbar {
+  background-color: #e19978;
+}
+
+.title, .main, .chain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Indie Flower", cursive;
+}
+
+.circle {
+  border: 5px solid #f7733b;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 5px #f9966c, inset 2px 2px 5px #f9966c;
+}
+
+.theOne {
+  border: 7.5px solid gold;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 3px 3px 5px #ffdf33, inset 3px 3px 5px #ffdf33;
+}
+
+.chain div:nth-child(1) {
+  border: 3px solid black;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 1.2px 1.2px 5px #1a1a1a, inset 1.2px 1.2px 5px #1a1a1a;
+  position: relative;
+  left: -20px;
+}
+
+.chain div:nth-child(2) {
+  border: 3.5px solid black;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  box-shadow: 1.4px 1.4px 5px #1a1a1a, inset 1.4px 1.4px 5px #1a1a1a;
+  position: relative;
+  left: -40px;
+}
+
+.chain div:nth-child(3) {
+  border: 4px solid black;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  box-shadow: 1.6px 1.6px 5px #1a1a1a, inset 1.6px 1.6px 5px #1a1a1a;
+  position: relative;
+  left: -60px;
+}
+
+.chain div:nth-child(4) {
+  border: 4.5px solid black;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  box-shadow: 1.8px 1.8px 5px #1a1a1a, inset 1.8px 1.8px 5px #1a1a1a;
+  position: relative;
+  left: -80px;
+}
+
+.chain div:nth-child(5) {
+  border: 5px solid black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 5px #1a1a1a, inset 2px 2px 5px #1a1a1a;
+  position: relative;
+  left: -100px;
+}
+
+.chain div:nth-child(6) {
+  border: 5.5px solid black;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  box-shadow: 2.2px 2.2px 5px #1a1a1a, inset 2.2px 2.2px 5px #1a1a1a;
+  position: relative;
+  left: -120px;
+}

@@ -1,0 +1,40 @@
+body{
+  font-family: 'Indie Flower', cursive;
+  background-image: url("./images/abstract720.jpg") ;
+}
+
+.navbar{
+  background-color: #e19978;
+}
+
+.title, .main, .chain{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+
+@mixin drawCircle($taille, $couleur){
+  border: $taille/20 solid $couleur;
+  border-radius: 50%;
+  width: $taille;
+  height: $taille;
+  box-shadow: $taille/50 $taille/50 5px lighten( $couleur, 10% ), inset $taille/50 $taille/50 5px lighten( $couleur, 10% );
+}
+
+.circle{
+  @include drawCircle(100px, #f7733b);
+}
+
+.theOne{
+  @include drawCircle(150px, gold);
+}
+
+@for $i from 1 through 6 {
+  .chain div:nth-child(#{$i}){
+    @include drawCircle(50px + $i*10, black);
+    position: relative;
+    left: $i * -20px;
+  }
+}
